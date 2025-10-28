@@ -1,0 +1,19 @@
+-- Active: 1753278632562@@127.0.0.1@3306@Livre_Or
+CREATE DATABASE Livre_Or;
+
+USE Livre_Or;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    login VARCHAR(255) UNIQUE,
+    password VARCHAR(255)
+);
+
+CREATE TABLE commentaires (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    commentaire TEXT NOT NULL,
+    id_user INT NOT NULL,
+    ajout DATE,
+
+    FOREIGN KEY (id_user) REFERENCES users(id) 
+)ENGINE=InnoDB;
