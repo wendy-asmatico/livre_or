@@ -1,0 +1,175 @@
+:root {
+  --color-black: #0A0A0A;
+  --color-gold: #C5B174;
+  --color-white: #F5F5F5;
+}
+
+* {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 30px;
+font-size: 30px;
+justify-content: flex-end;
+width: 80vw;
+padding: 30px;
+}
+
+.btn_deconnexion {
+    padding: 10px;
+    background-color: var(--color-gold);
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: var(--color-black);
+    color: var(--color-gold)
+}
+
+
+h1 {
+    font-size: 45px;
+}
+
+.titre {
+    padding: 30px;
+    background-color: rgba(197, 177, 116, 0.6);
+    width: 100vw;
+    text-align: center;
+}
+
+
+.icon_plus_message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background-color: #C5B174;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+a {
+    color: #0A0A0A;
+    text-decoration: none;
+}
+
+.btn_ajouter {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    width: 80vw;
+    padding: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.message_card {
+  background-color: #C5B174;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto;
+  width: 60%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.message_card .auteur {
+  font-size: 35px;
+}
+
+.message_card .contenu {
+  background: #F7F7F7;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 8px;
+  font-size: 25px;
+}
+
+.message_card .date {
+  text-align: right;
+  font-size: 15px;
+  color: #333;
+}
+
+.aucun_resultat {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1.2rem 2rem;
+  width: fit-content;
+  border-radius: 12px;
+background-color: #C5B174; 
+  color: var(--color-black);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.aucun_resultat:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+.btn {
+  background-color: var(--color-black);
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  border-radius: 20px;
+  width: 25vw;
+  padding: 20px;
+  font-size: 36px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: var(--color-gold);
+  color: var(--color-bg);
+  box-shadow: 0 0 10px var(--color-gold);
+}
+
+.buttons {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+
+.buttons a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.ici {
+  color: #C5B174;
+}

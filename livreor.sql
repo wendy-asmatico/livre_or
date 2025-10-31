@@ -17,3 +17,6 @@ CREATE TABLE commentaires (
 
     FOREIGN KEY (id_user) REFERENCES users(id) 
 )ENGINE=InnoDB;
+
+ALTER TABLE commentaires 
+MODIFY ajout DATETIME DEFAULT CURRENT_TIMESTAMP;

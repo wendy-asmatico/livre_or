@@ -77,12 +77,12 @@ gap: 30px;
   letter-spacing: 0.5px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin: 0 auto;
 }
 
 .btn:hover {
   background-color: var(--color-gold);
   color: var(--color-bg);
-  transform: scale(1.05);
   box-shadow: 0 0 10px var(--color-gold);
 }
 
